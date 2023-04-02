@@ -1,3 +1,13 @@
+###
+ # @Author: h7ml <h7ml@qq.com>
+ # @Date: 2023-04-02 23:08:35
+ # @LastEditors: h7ml <h7ml@qq.com>
+ # @LastEditTime: 2023-04-02 23:10:25
+ # @FilePath: \chatgpt-vercel-duoniu\.env copy.example
+ # @Description: 
+ # 
+ # Copyright (c) 2022 by h7ml<h7ml@qq.com>, All Rights Reserved. 
+### 
 OPENAI_API_KEY=
 DEFAULT_MESSAGE="Powered by OpenAI Vercel
 - 由 [@ourongxing](https://github.com/ourongxing) 基于 [chatgpt-demo](https://github.com/ddiu8081/chatgpt-demo) 开发，查看 [源码](https://github.com/ourongxing/chatgpt-vercel)，欢迎自部署。
@@ -18,3 +28,4 @@ MAX_INPUT_TOKENS=3072
 OPENAI_API_BASE_URL=api.openai.com
 SENDKEY=
 SENDCHANNEL=9
+SHOWWECHAT=true
