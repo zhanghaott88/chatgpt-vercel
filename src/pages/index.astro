@@ -18,6 +18,9 @@ try {
 }
 
 const showWechat = import.meta.env.SHOWWECHAT?.length
+const duoniuMessage = import.meta.env.DUONIUMESSAGE
+const duoniuWechatimg = import.meta.env.WECHATIMG
+console.log(duoniuWechatimg,"duoniuWechatimg")
 const _reset = import.meta.env.RESET_CONTINUOUS_DIALOGUE_OPTION
 ---
 
@@ -26,9 +29,8 @@ const _reset = import.meta.env.RESET_CONTINUOUS_DIALOGUE_OPTION
     <Header />
    {showWechat?(
    <div class="mt-60  margin-auto items-center justify-center">
-   <p>多牛AI紧急通知：由于访问人数过多，Key变的比较紧张。网站升级维护中，正在紧急寻找新的Key。耐心等待，等待时间不会超过一天。扫码关注下方微信二维码，正常后第一时间微信通知。
-    
-   <img src="wechat.jpg" style="margin: 0 auto" class="pt-10 w-auto h-auto text-center items-center justify-center display-flex margin-auto"  />
+   <p>{duoniuMessage}
+   <img src=`${duoniuWechatimg}` style="margin: 0 auto" class="pt-10 w-auto h-auto text-center items-center justify-center display-flex margin-auto"  />
     </p>
    </div>)
    :(
