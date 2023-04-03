@@ -1,12 +1,17 @@
 ---
 import Logo from "./Logo.astro"
 import ThemeToggle from "./ThemeToggle.astro"
+
+const showWechat = import.meta.env.SHOWWECHAT?.length
 ---
 
 <header class="sticky top--100px z-99">
-  <div class="w-100px h-100px logo">
+  {showWechat?  <div class="w-50px h-50px logo">
     <Logo />
-  </div>
+  </div>:  <div class="w-100px h-100px logo">
+    <Logo />
+  </div>}
+
   <div class="flex justify-between items-center">
     <div
       class="flex items-center mt-4 pb-4 text-2xl title cursor-pointer"
