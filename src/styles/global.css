@@ -43,7 +43,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding-top: -20em;
+    padding: 2em 4rem;
   }
 }
 
