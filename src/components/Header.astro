@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle.astro"
 const showWechat = import.meta.env.SHOWWECHAT?.length
 ---
 
-<header class="sticky top--100px z-99">
+<header class="absolute top--100px z-99">
   {showWechat?  <div class="w-50px h-50px logo">
     <Logo />
   </div>:  <div class="w-100px h-100px logo">
